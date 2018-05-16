@@ -20,7 +20,7 @@ https://github.com/toranb/ember-hot-reload-demo
 
 ## Configuration
 
-* Alter the suported types configuration of ember-cli-hot-loader to include reducers
+Alter the suported types configuration of ember-cli-hot-loader to include reducers
 
 ```javascript
 //my-app/config/environment.js
