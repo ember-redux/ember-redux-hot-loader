@@ -1,13 +1,17 @@
 {
   "name": "ember-redux-hot-loader",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Plugin for ember-cli-hot-loader that hot reloads your reducers",
   "keywords": [
+    "redux",
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ember-redux/ember-redux-hot-loader"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Toran Billups toranb@gmail.com",
   "directories": {
     "doc": "doc",
     "test": "tests"

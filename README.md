@@ -1,50 +1,37 @@
-ember-redux-hot-loader
-==============================================================================
+# ember-redux-hot-loader
 
-[Short description of the addon.]
+[![Travis][ci-img]][ci-url] [![NPM][npm-img]][npm-url] ![Ember][ember-img]
 
-Installation
-------------------------------------------------------------------------------
+Plugin for ember-cli-hot-loader that hot reloads your reducers
+
+## Installation
 
 ```
+ember install ember-cli-hot-loader
 ember install ember-redux-hot-loader
 ```
 
+## Example application
 
-Usage
-------------------------------------------------------------------------------
+An example application that hot reloads styles/components/reducers
 
-[Longer description of how to use the addon in apps.]
+https://github.com/toranb/ember-hot-reload-demo
 
 
-Contributing
-------------------------------------------------------------------------------
+## Configuration
 
-### Installation
+* Alter the suported types configuration of ember-cli-hot-loader to include reducers
 
-* `git clone <repository-url>`
-* `cd ember-redux-hot-loader`
-* `npm install`
-
-### Linting
-
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Running tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-License
-------------------------------------------------------------------------------
-
-This project is licensed under the [MIT License](LICENSE.md).
+```javascript
+//my-app/config/environment.js
+if (environment === 'development') {
+  ENV['ember-cli-hot-loader'] = {
+    supportedTypes: ['components', 'reducers']
+  }
+}
+```
+[ci-img]: https://img.shields.io/travis/ember-redux/ember-redux-hot-loader.svg "Travis CI Build Status"
+[ci-url]: https://travis-ci.org/ember-redux/ember-redux-hot-loader
+[ember-img]: https://img.shields.io/badge/ember-3.0+-green.svg "Ember 3.0+"
+[npm-img]: https://img.shields.io/npm/v/ember-redux-hot-loader.svg "NPM Version"
+[npm-url]: https://www.npmjs.com/package/ember-redux-hot-loader
