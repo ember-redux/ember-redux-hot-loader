@@ -1,6 +1,6 @@
 {
   "name": "ember-redux-hot-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Plugin for ember-cli-hot-loader that hot reloads your reducers",
   "keywords": [
     "redux",

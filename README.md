@@ -11,6 +11,8 @@ ember install ember-cli-hot-loader
 ember install ember-redux-hot-loader
 ```
 
+Install the [redux dev tools extension]
+
 ## Example application
 
 An example application that hot reloads styles/components/reducers
@@ -20,7 +22,7 @@ https://github.com/toranb/ember-hot-reload-demo
 
 ## Configuration
 
-Alter the suported types configuration of ember-cli-hot-loader to include reducers
+Alter the supported types configuration of ember-cli-hot-loader to include reducers
 
 ```javascript
 //my-app/config/environment.js
@@ -35,3 +37,4 @@ if (environment === 'development') {
 [ember-img]: https://img.shields.io/badge/ember-3.0+-green.svg "Ember 3.0+"
 [npm-img]: https://img.shields.io/npm/v/ember-redux-hot-loader.svg "NPM Version"
 [npm-url]: https://www.npmjs.com/package/ember-redux-hot-loader
+[redux dev tools extension]: https://github.com/zalmoxisus/redux-devtools-extension

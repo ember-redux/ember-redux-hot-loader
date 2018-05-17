@@ -4,7 +4,7 @@ import Service, { inject as service } from '@ember/service';
 import { getOwner } from '@ember/application';
 
 const getReducerModule = function(modulePath, modulePrefix) {
-  const fileNamePattern = new RegExp('(.*)/app/reducers/(.*)');
+  const fileNamePattern = new RegExp('^(?!.*selector)(.*)/app/reducers/(.*)');
   const standardModulePath = modulePath.split('\\').join('/');
   const match = fileNamePattern.exec(standardModulePath);
   if (match && match.length === 3) {
