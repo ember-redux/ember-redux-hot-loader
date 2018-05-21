@@ -13,13 +13,6 @@ ember install ember-redux-hot-loader
 
 Install the [redux dev tools extension]
 
-## Example application
-
-An example application that hot reloads styles/components/reducers
-
-https://github.com/toranb/ember-hot-reload-demo
-
-
 ## Configuration
 
 Alter the supported types configuration of ember-cli-hot-loader to include reducers
@@ -32,6 +25,14 @@ if (environment === 'development') {
   }
 }
 ```
+
+## Example application
+
+An example application that hot reloads styles/components/reducers
+
+https://github.com/toranb/ember-hot-reload-demo
+
+
 [ci-img]: https://img.shields.io/travis/ember-redux/ember-redux-hot-loader.svg "Travis CI Build Status"
 [ci-url]: https://travis-ci.org/ember-redux/ember-redux-hot-loader
 [ember-img]: https://img.shields.io/badge/ember-3.0+-green.svg "Ember 3.0+"
